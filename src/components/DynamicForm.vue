@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import './DynamicForm.css'
 import { reactive, computed } from 'vue'
-import './DynamicForm.scss'
-import { InputFieldConfig, SelectFieldConfig, CheckboxFieldConfig, FieldConfig } from './types'
+import type { FieldConfig } from './types'
 
 const props = defineProps<{
   fields: FieldConfig[]
